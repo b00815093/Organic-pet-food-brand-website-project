@@ -29,7 +29,7 @@
         }
 
         .header {
-            padding: 1rem 2rem;
+            padding: 0.5rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -44,7 +44,7 @@
         }
 
         .logo img {
-            height: 50px;
+            height: 40px;
         }
 
         .nav {
@@ -73,18 +73,28 @@
             color: white;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
         }
-
+      
         .hero h1 {
-            font-family: 'Vollkorn', serif;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            line-height: 1.4;
-            font-weight: 600;
-        }
+    font-family: 'Vollkorn', serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.2); /* Translucent black background */
+    padding: 20px 30px; /* Add padding for spacing */
+    border-radius: 9px; /* Rounded corners */
+    display: inline-block; /* Make it only as wide as the text */
+}
 
+/* Remove the background from hero-content */
+.hero-content {
+    padding: 30px;
+    max-width: 80%;
+    background-color: transparent; /* Remove the background */
+}
         .hero p {
             font-family: 'Instrument Sans', sans-serif;
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin-bottom: 1rem;
         }
 
