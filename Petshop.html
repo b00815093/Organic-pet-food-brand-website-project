@@ -131,6 +131,8 @@
             padding: 2rem;
             text-align: center;
             border-radius: 10px;
+            position: relative;
+            padding-bottom: 4rem; /* Add space at bottom for the label */
         }
 
         .menu-item img {
@@ -142,6 +144,17 @@
 
         .menu-item h3 {
             font-size: 1.5rem;
+        }
+        .menu-label {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            position: absolute;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
         }
 
         .reasons-section {
@@ -160,6 +173,35 @@
             gap: 2rem;
             max-width: 1200px;
             margin: 2rem auto;
+            position: relative;
+        }
+        .reasons-grid::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #000;
+            top: 5%;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .reasons-grid1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            position: relative;
+        }
+        .reasons-grid1::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background-color: #000;
+            top: 5%;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .reason-item {
@@ -181,7 +223,7 @@
             background-color: var(--mint-green);
             padding: 2rem;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+             grid-template-columns: 1fr 1fr 1fr;
             gap: 2rem;
         }
 
@@ -204,17 +246,25 @@
             color: black;
             font-family: 'Instrument Sans', sans-serif;
         }
-        .divider {
-            border-left: 2px solid #000; /* Creates the vertical line */
-            height: 100%; /* Ensures divider stretches to full height of parent */
-            margin: 0 20px; /* Spacing between items */
-        } 
+        .social-icons {
+            display: flex;
+            margin-bottom: 1.5rem;
+        }
         
-            .menu-label {
-            background-color: #f5f5f5;
-            padding: 10px;
-            border-radius: 5px;
-            font-weight: bold;
+        .social-icons a {
+            margin-right: 1rem;
+        }
+        
+        /* Footer specific styles to match Figma */
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .footer-logo img {
+            max-width: 100px;
+            height: auto;
         }
     </style>
 </head>
@@ -301,7 +351,8 @@
                 <img src="./Fabriek-png-e1673967144184 1.svg" alt="Factory icon">
                 <h3>Local Productions</h3>
                 <p>Our Products Are Locally Produced In Our Own Factory In Veldhoven, Full Of Virtuous Ingredients. That's Something To Be Truly Proud Of!</p>
-            </div> 
+            </div> </div>
+            <div class="reasons-grid1">
            
             <div class="reason-item">
                 <img src="./Happy-dog-png-e1673966992117 1.svg" alt="Dog icon">
@@ -312,7 +363,7 @@
                 <img src="./leaf.svg" alt="Leaf icon">
                 <h3>Organic Products</h3>
                 <p>We Make Sure Our Sourcing Of Raw Materials Is Organic</p>
-            </div>  
+            </div>  </div>
         </div>
     </section>
 
