@@ -204,6 +204,28 @@
             color: black;
             font-family: 'Instrument Sans', sans-serif;
         }
+        .divider {
+            border-left: 2px solid #000; /* Creates the vertical line */
+            height: 100%; /* Ensures divider stretches to full height of parent */
+            margin: 0 20px; /* Spacing between items */
+        } 
+        .container1 {
+            display: flex; /* Align items horizontally */
+            justify-content: space-between; /* Spread out the elements */
+            width: 100%; /* Make container take up full width */
+        }
+        .container2 {
+            display: flex; /* Align items horizontally */
+            justify-content: space-around; /* Space elements evenly */
+            align-items: center; /* Align items vertically centered */
+            width: 100%; /* Make container take up full width */
+            height: 100vh; /* Make container take up full viewport height */}
+            .menu-label {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -237,21 +259,22 @@
             <a href="#" class="cta-button">Find the Best Meal Now →</a>
         </div>
     </section>
-
+  
+    
     <section class="menu-section">
         <h2 class="menu-title">DAILY MENU FOR CATS</h2>
         <div class="menu-grid">
             <div class="menu-item">
                 <img src="./image 5.svg" alt="Kitten Food">
-                <h3>Kitten</h3>
+                <h3 class="menu-label">Kitten</h3>
             </div>
             <div class="menu-item">
                 <img src="./image 6.svg" alt="Adult Cat Food">
-                <h3>Adult</h3>
+                <h3 class="menu-label">Adult</h3>
             </div>
             <div class="menu-item">
                 <img src="./image 4.svg" alt="Senior Cat Food">
-                <h3>Senior</h3>
+                <h3 class="menu-label">Senior</h3>
             </div>
         </div>
     </section>
@@ -261,15 +284,15 @@
         <div class="menu-grid">
             <div class="menu-item">
                 <img src="./image 1.svg" alt="Puppy Food">
-                <h3>Puppy</h3>
+                <h3 class="menu-label">Puppy</h3>
             </div>
             <div class="menu-item">
                 <img src="./image 3.svg" alt="Adult Dog Food">
-                <h3>Adult</h3>
+                <h3 class="menu-label">Adult</h3>
             </div>
             <div class="menu-item">
                 <img src="./image 2.svg" alt="Senior Dog Food">
-                <h3>Senior</h3>
+                <h3 class="menu-label">Senior</h3>
             </div>
         </div>
     </section>
@@ -277,26 +300,29 @@
     <section class="reasons-section">
         <h2>THE REASONS OF CHOOSING US</h2>
         <div class="reasons-grid">
+            <div class="container1">
             <div class="reason-item">
                 <img src="./Vlees-op-1-png-e1673967051744 1.svg" alt="Meat icon">
                 <h3>Meat As Numbers #1</h3>
                 <p>The Most Important Thing In A Carnivore's Life, Next To His Family, Is Meat. It's Exactly What He Needs For A Supple Digestive Process.</p>
             </div>
+            <div class="divider"></div> <!-- Vertical divider -->
             <div class="reason-item">
                 <img src="./Fabriek-png-e1673967144184 1.svg" alt="Factory icon">
                 <h3>Local Productions</h3>
                 <p>Our Products Are Locally Produced In Our Own Factory In Veldhoven, Full Of Virtuous Ingredients. That's Something To Be Truly Proud Of!</p>
-            </div>
+            </div> </div><br>
+            <div class="container2">
             <div class="reason-item">
                 <img src="./Happy-dog-png-e1673966992117 1.svg" alt="Dog icon">
                 <h3>Better Flavour For Pets</h3>
                 <p>Thanks To 50 Years Of Knowledge And Craft, We Know Exactly What Makes Your Dog Truly Happy.</p>
-            </div>
+            </div>  <div class="divider"></div> <!-- Vertical divider -->
             <div class="reason-item">
                 <img src="./leaf.svg" alt="Leaf icon">
                 <h3>Organic Products</h3>
                 <p>We Make Sure Our Sourcing Of Raw Materials Is Organic</p>
-            </div>
+            </div>  </div>
         </div>
     </section>
 
